@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <title>Login</title>
+    </head>
+    <body>
+        <main>
+            <div class="topnav" id="myTopnav">
+                <a class="navbar-brand" href="#">Looop</a>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/reg.html">Register</a></li>
+                <li><a href="news.html">News</a></li>
+                <form method="get" action="/search" id="search">
+                    <input type="text" size="40" placeholder="Search..." />
+                </form>
+                <li class="icon">
+                    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+                </li>
+            </div>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+
+            <div class="row">
+                <div class="col-md-6">       
+                    <div class="centered">      
+                        <form class="form-box centered" method="get" >
+                            <div class="centered">
+                                <fieldset>
+                                    <div class="col-sm-12 text-center"><h1>Login</h1></div>
+                                </fieldset>
+                                <input type="text" size="40" placeholder="Email" >
+                                <input type="password" size="40" placeholder="Password">
+                                <div id="buttonNew" style="display:block;margin-left:12px;"> <button class="buttonNew">Cancel</button>
+                                    <button class="buttonNew">Login</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer> 
+            <div class="footerNew">
+                <a href="https://www.facebook.com/609021119136026" >
+                    <img src="img/fb.jpg" alt="FB" style="width:42px;height:42px;border:0;margin:5px;border-radius:10px">
+                </a>
+                <a href="https://www.youtube.com/?gl=BG&hl=bg">
+                    <img src="img/youtube.jpg" alt="YouTube" style="width:42px;height:42px;border:0;margin:5px;border-radius:10px">
+                </a>
+                <a href="https://twitter.com/HOME">
+                    <img src="img/twit.jpg" alt="twitter" style="width:42px;height:42px;border:0;margin:5px;border-radius:10px">
+                </a>
+                <a href="https://www.google.bg/">
+                    <img src="img/google1.jpg" alt="google" style="width:42px;height:42px;border:0;margin:5px;border-radius:10px">
+                </a>
+                <a href="https://github.com/">
+                    <img src="img/38401.png" alt="github" style="width:42px;height:42px;border:0;margin:5px;border-radius:10px">
+                </a>
+                <p style="color: #CCC; text-shadow: 2px 4px 6px white;">© 2016 - Software University Foundation</p>
+            </div>
+        </footer>
+    </body>
